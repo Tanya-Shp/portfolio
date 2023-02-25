@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+header {
+background-color: lightcoral;
+height: 50px;
+}
+nav {
+    /* border: 5px dotted black; */
+    /* width: max-content;*/
+    height: inherit;
+    display: flex;
+    /* justify-content: space-beetwin; */
+    align-items: center;
+}
+nav > a {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;     
+    font-size: 18px;
+    padding: 14px 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.4s ease;
+}
+nav > a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #ffffff;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+nav > a:hover { 
+    color: #ffffff; 
+}
+nav > a:hover::after {
+    width: 70%; 
+}
+.about_us {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: left;
+    padding: 5px;
+}
+.about_us img {
+    width: 300px;
+}
+ul {
+    font-size: 19px;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: cursive;
+    color: dimgray;
+}
+.name {    
+    color: lightcoral;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    padding-left: 5px;
+}
+.skill {    
+    color: lightcoral;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 5px;
+    text-decoration-line: underline;
+    display: inline;
+    border-bottom: 2px solid #f9dd94;
+    text-decoration-color: rgb(245, 219, 202);
+}
+.my_game{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;    
+}
+.my_game > *{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    margin-top: 10px;
+}
+.my_game input, .my_game button{
+    margin: 5px;
+    min-height: 28px;
+    width: max-content;
+    padding: 0 10px;
+}
+.my_game input{
+    align-content: normal;
+    border: none;
+    background-color: #fcd8d8;
+}
+.my_game button{     
+    background-color: rgba(127, 255, 212, 0.452);
+    border-color: rgb(138, 253, 253);
+    border-width: 2px;
+    border-radius: 2px;
+}
+h2{
+    font-family: 'Comfortaa', cursive;
+    color: rgb(0, 114, 114);
+}
+.chosed_block{
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 645px;
+    row-gap: 15px;
+    padding-left: 25px;
+}
+.chosed_block-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.chosed_block-container > div{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    background-image: url("../img/2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.chosed_element{
+    outline: 3px solid rgba(132, 248, 157, 0.637);
+    background-color: #dffff5;    
+}
+main {
+    padding-bottom: 100px;
+}
+footer {
+    font-size: 10px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 15px;
+    color: dimgray;
+    background-color: #dfdfdf8e;
+}
